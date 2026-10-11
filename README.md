@@ -2,7 +2,7 @@
 
 Customers earn points on completed orders and redeem them for a discount at checkout -- balance always computed from an audit-logged ledger.
 
-- **WordPress.org:** https://wordpress.org/plugins/hdwebmobile-loyalty-points/
+- **WordPress.org:** https://wordpress.org/plugins/hdwebmobile-loyalty-points-store-credit/
 - **Requires:** WordPress 6.9+, WooCommerce, PHP 7.4+
 - **License:** GPLv2 or later
 
@@ -34,7 +34,7 @@ A competing "Smart Coupons for WooCommerce" plugin had a broken access control v
 Standard WordPress plugin structure:
 
 ```
-hdwebmobile-loyalty-points.php    Bootstrap
+hdwebmobile-loyalty-points-store-credit.php    Bootstrap
 includes/class-hdlp-activator.php
 includes/class-hdlp-admin.php
 includes/class-hdlp-core.php

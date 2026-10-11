@@ -40,7 +40,7 @@ A competing "Smart Coupons for WooCommerce" plugin had a broken access control v
 
 == Installation ==
 
-1. Upload the plugin files to the `/wp-content/plugins/hdwebmobile-loyalty-points` directory, or install the plugin through the WordPress plugins screen directly.
+1. Upload the plugin files to the `/wp-content/plugins/hdwebmobile-loyalty-points-store-credit` directory, or install the plugin through the WordPress plugins screen directly.
 2. Activate the plugin through the 'Plugins' screen in WordPress. WooCommerce must already be installed and active.
 3. Adjust the earning/redemption rates under WooCommerce > HDWebmobile > Loyalty Points if the defaults don't suit your store.
 
