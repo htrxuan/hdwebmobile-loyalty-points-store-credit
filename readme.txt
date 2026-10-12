@@ -16,8 +16,8 @@ Customers earn points on completed orders and redeem them for a discount at chec
 
 HDWebmobile Loyalty Points & Store Credit rewards customers with points for every completed order, which they can redeem for a discount on a future purchase. Customers see their balance and full history on a new "Loyalty Points" tab in their account.
 
-= Why this plugin exists =
-A competing "Smart Coupons for WooCommerce" plugin had a broken access control vulnerability (CVE-2026-45438) letting attackers generate high-value coupons through insufficient authorization checks -- forging value that was never actually earned. A points balance is exactly the same kind of value, and needs the same discipline. This plugin closes that vulnerability class by construction:
+= Security by design =
+Store credit and coupon tools hold real monetary value, so broken access control in them (CWE-284) can let attackers generate high-value credit through insufficient authorization checks -- forging value that was never actually earned. A points balance is exactly the same kind of value, and needs the same discipline. This plugin closes that vulnerability class by construction:
 
 * There is no "balance" field anywhere that gets directly written. Every award, redemption, and admin adjustment is a signed row in an append-only ledger table, and a customer's balance is always the live sum of their own rows -- never a cached number that could drift or be overwritten by a bad request.
 * Every redemption re-checks the customer's *current* live balance at the exact moment of redemption, both when the discount is shown in the cart and again when the order is actually created -- never a points figure the checkout form sent back to the server.
