@@ -146,8 +146,17 @@ class HDLP_Admin
         exit;
     }
 
+    /**
+     * Scoped to this plugin's own hub tab only -- never shown on unrelated admin
+     * screens, even though admin_notices itself is a global hook.
+     */
     public function render_admin_notices()
     {
+        $screen = get_current_screen();
+        if (!$screen || 'woocommerce_page_hdwebmobile' !== $screen->id) {
+            return;
+        }
+
         $notice = get_transient('hdlp_admin_notice_' . get_current_user_id());
         if (!$notice) {
             return;
