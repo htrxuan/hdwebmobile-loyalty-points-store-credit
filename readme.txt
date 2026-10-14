@@ -38,6 +38,9 @@ Store credit and coupon tools hold real monetary value, so broken access control
 * No expiry date on points in this version
 * The cart redemption box uses a plain form submission (not AJAX) -- applying or removing a redemption reloads the cart page
 
+= Enjoying this plugin? =
+If it helps your site, please consider [leaving an honest review on WordPress.org](https://wordpress.org/support/plugin/hdwebmobile-loyalty-points-store-credit/reviews/#new-post) -- it helps other WordPress users find it. Found a problem or have an idea? Please [open a support topic](https://wordpress.org/support/plugin/hdwebmobile-loyalty-points-store-credit/) first so it can be fixed.
+
 == Installation ==
 
 1. Upload the plugin files to the `/wp-content/plugins/hdwebmobile-loyalty-points-store-credit` directory, or install the plugin through the WordPress plugins screen directly.
