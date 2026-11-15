@@ -4,7 +4,7 @@
  * Plugin Name: HDWebmobile Loyalty Points & Store Credit
  * Plugin URI: https://hdwebmobile.com/plugins/hdwebmobile-loyalty-points-store-credit/
  * Description: Customers earn points on completed orders and redeem them for a discount at checkout. Balance is always computed from an append-only ledger, never a value the browser can hand back to the server.
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: htrxuan - Han Tran
  * Author URI: https://hdwebmobile.com/
  * License: GPLv2 or later
@@ -22,7 +22,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('HDLP_VERSION', '1.0.0');
+define('HDLP_VERSION', '1.0.1');
 define('HDLP_DB_VERSION', '1.0.0');
 define('HDLP_PLUGIN_FILE', __FILE__);
 define('HDLP_PLUGIN_DIR', plugin_dir_path(__FILE__));
