@@ -10,11 +10,9 @@ if (!defined('ABSPATH')) {
  * The only class in this plugin that touches the points ledger table, and the only
  * source of truth for a customer's balance.
  *
- * Motivated by CVE-2026-45438: a competing "Smart Coupons for WooCommerce" plugin had
- * a broken access control flaw letting attackers generate high-value coupons through
- * insufficient authorization checks -- forging value that was never actually earned.
- * A points/store-credit balance is exactly the same kind of value and needs the same
- * discipline. This plugin closes that vulnerability class by construction:
+ * The risk this guards against: broken access control that lets an attacker create value
+ * (points, credit, coupons) through insufficient authorization checks -- forging value that
+ * was never actually earned. This plugin closes that vulnerability class by construction:
  *
  * - There is no "balance" field anywhere that gets directly incremented/decremented.
  *   The table is append-only (every row is a signed point delta with a reason and,
